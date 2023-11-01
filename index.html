@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Student's Payment</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <main>
+    <div class="page-header">
+      <h2>Student's Payment</h2>
+      <div class="breadcrumbs">
+        <a href="#">Home</a> /
+        <a href="#">Student's Payment</a>
+      </div>
+    </div>
+    <div class="grid-container">
+      <div class="search-card">
+        <!-- <h3 class="card-header">Search Student</h3> -->
+        <form>
+          <div class="form-flex">
+            <div>
+              <label for="search-id">Student ID</label>
+              <input type="search" name="search-id" id="search-id" placeholder="Search by id" required>
+            </div>
+            <div>
+              <label for="month">Month</label>
+              <input type="month" name="month" id="month" required>
+            </div>
+          </div>
+          <button type="submit" class="button-primary">Search</button>
+        </form>
+      </div>
+      <div class="info-card">
+        <h3 class="card-header">Student Information</h3>
+        <div class="info-card-body">
+          <div>
+            <img src="images/student.jpg" alt="Student's Photo">
+          </div>
+          <div class="info-container">
+            <div>
+              <span>Student's Name :</span>
+              <span>Nabid Hasan</span>
+            </div>
+            <div>
+              <span>Father's Name :</span>
+              <span>MD Nurul Islam</span>
+            </div>
+            <div>
+              <span>Class :</span>
+              <span>Six</span>
+            </div>
+            <div>
+              <span>Group :</span>
+              <span>None</span>
+            </div>
+            <div>
+              <span>Shift :</span>
+              <span>Day</span>
+            </div>
+            <div>
+              <span>Section :</span>
+              <span>A</span>
+            </div>
+            <div>
+              <span>Roll No :</span>
+              <span>1</span>
+            </div>
+            <div>
+              <span>Year :</span>
+              <span>2023</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="dues-info">
+        <h3 class="card-header">Dues Information</h3>
+        <div class="dues-table-container">
+          <table class="dues-table">
+            <thead>
+              <tr>
+                <th colspan="2">Dues</th>
+                <th colspan="2">Waiver</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Monthly Fees</td>
+                <td>1000</td>
+                <td>Monthly Fees</td>
+                <td>100 (10%)</td>
+              </tr>
+              <tr>
+                <td>Admission Fee</td>
+                <td>5000</td>
+                <td>Admission Fee</td>
+                <td>0 (0%)</td>
+              </tr>
+              <tr>
+                <td>Total Amount</td>
+                <td>6000</td>
+                <td>Total Waiver</td>
+                <td>100</td>
+              </tr>
+              <tr>
+                <td>Total (After Waiver)</td>
+                <td>5900</td>
+                <td>Paid Amount</td>
+                <td>0</td>
+              </tr>
+            </tbody>
+            <tfoot>
+              <th colspan="4">Total Due = 5900</th>
+            </tfoot>
+          </table>
+        </div>
+      </div>
+      <div class="collect-fees">
+        <h3 class="card-header">Collect Fees</h3>
+        <form>
+          <div class="form-flex">
+            <div>
+              <label for="pay-amount">Payment Amount</label>
+              <input type="number" name="pay-amount" id="pay-amount" placeholder="Payment Amount" required>
+            </div>
+            <div>
+              <label for="pay-month">Payment Month</label>
+              <input type="month" name="pay-month" id="pay-month" required>
+            </div>
+          </div>
+          <div>
+            <label for="pay-type">Payment Type</label>
+            <div class="radio-options">
+              <label for="cash"><input type="radio" name="pay-type" id="cash"> Cash</label>
+              <label for="bank"><input type="radio" name="pay-type" id="bank"> Bank</label>
+              <label for="cash"><input type="radio" name="pay-type" id="mobile-banking"> Mobile Banking</label>
+            </div>
+          </div>
+          <div class="form-flex">
+            <div>
+              <label for="account-no">Bank Account No.</label>
+              <input type="number" name="account-no" id="account-no" placeholder="Bank Account No." required>
+            </div>
+            <div>
+              <label for="pay-date">Date</label>
+              <input type="date" name="pay-date" id="pay-date" required>
+            </div>
+          </div>
+          <div>
+            <label for="pay-note">Note</label>
+            <textarea name="pay-note" id="pay-note" placeholder="Enter your note (Optional)"></textarea>
+          </div>
+          <button type="submit" class="button-primary">Submit</button>
+        </form>
+      </div>
+    </div>
+  </main>
+</body>
+
+</html>
